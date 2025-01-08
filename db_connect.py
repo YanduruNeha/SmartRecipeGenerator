@@ -16,7 +16,7 @@ def get_db_connection():
         return None
 
 def get_gpt_key():
-    return "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" 
+    return "use the key here" 
 
 if __name__ == "__main__":
     get_db_connection()
