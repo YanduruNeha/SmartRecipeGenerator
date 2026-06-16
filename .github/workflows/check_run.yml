@@ -1,8 +1,9 @@
 name: Check Run Trigger
- 
+
 on:
-  check_run
- 
+  check_run:
+    types: [created, completed]
+
 jobs:
   build:
     runs-on: ubuntu-latest
