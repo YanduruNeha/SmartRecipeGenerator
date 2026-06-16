@@ -1,0 +1,11 @@
+name: PR Comment Event
+
+on:
+  issue_comment
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PR comment message
+        run: echo "Comment added on PR"
