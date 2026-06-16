@@ -1,0 +1,12 @@
+name: Label Event
+
+on:
+  label
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Label event message
+        run: echo "Label event triggered"
+``
