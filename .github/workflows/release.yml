@@ -1,0 +1,12 @@
+name: Release Event
+
+on:
+  release
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Release message
+        run: echo "Release event triggered"
+``
