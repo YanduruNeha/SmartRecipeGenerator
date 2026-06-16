@@ -1,0 +1,11 @@
+name: Check Run Trigger
+ 
+on:
+  check_run
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "Check run event triggered"
