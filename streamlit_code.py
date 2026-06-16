@@ -444,3 +444,4 @@ elif st.session_state["page"] == "Register":
 elif st.session_state.get("username"):
     main_app()
     
+print("hi")
