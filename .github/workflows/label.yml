@@ -9,4 +9,3 @@ jobs:
     steps:
       - name: Label event message
         run: echo "Label event triggered"
-``
