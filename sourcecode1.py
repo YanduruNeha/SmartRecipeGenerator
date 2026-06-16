@@ -117,5 +117,4 @@ def insert_recipe(username, ingredients, recipe, cooking_time, nutritional_info,
             connection.close()
 
 
-print("Main version")
 
