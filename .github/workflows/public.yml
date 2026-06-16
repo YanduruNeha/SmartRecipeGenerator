@@ -1,0 +1,9 @@
+name: Public Event
+on:
+  public
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Public event message
+        run: echo "Repository made public"
