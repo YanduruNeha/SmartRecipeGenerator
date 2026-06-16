@@ -1,0 +1,10 @@
+name: Gollum Event
+on:
+  gollum
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Gollum event message
+        run: echo "Wiki updated event triggered"
