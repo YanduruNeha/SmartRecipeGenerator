@@ -1,0 +1,11 @@
+name: Delete Event
+
+on:
+  delete
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete event message
+        run: echo "Delete event triggered"
