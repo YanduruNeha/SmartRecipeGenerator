@@ -1,0 +1,11 @@
+name: Page Build Event
+
+on:
+  page_build
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Page build message
+        run: echo "GitHub Pages site built"
