@@ -116,4 +116,6 @@ def insert_recipe(username, ingredients, recipe, cooking_time, nutritional_info,
         if connection:
             connection.close()
 
-print("feature version")
+
+print("Main version")
+
