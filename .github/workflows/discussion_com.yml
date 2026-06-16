@@ -1,0 +1,11 @@
+name: Discussion Comment Event
+
+on:
+  discussion_comment
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Discussion comment message
+        run: echo "Discussion comment event triggered"
