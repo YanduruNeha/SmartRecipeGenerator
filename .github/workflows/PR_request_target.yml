@@ -1,0 +1,11 @@
+name: Pull Request Target Event
+
+on:
+  pull_request_target
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PR target message
+        run: echo "Pull request target triggered"
