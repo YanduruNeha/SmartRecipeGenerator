@@ -1,0 +1,11 @@
+name: Create Event
+
+on:
+  create
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create event message
+        run: echo "Create event triggered"
