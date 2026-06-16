@@ -1,0 +1,11 @@
+name: Milestone Event
+
+on:
+  milestone
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Milestone message
+        run: echo "Milestone event triggered"
