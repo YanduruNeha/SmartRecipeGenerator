@@ -1,0 +1,11 @@
+name: Pull Request Event
+
+on:
+  pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PR message
+        run: echo "Pull request triggered"
