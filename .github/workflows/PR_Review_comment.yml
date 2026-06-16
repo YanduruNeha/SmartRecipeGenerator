@@ -1,0 +1,11 @@
+name: PR Review Comment Event
+
+on:
+  pull_request_review_comment
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PR review comment message
+        run: echo "PR review comment triggered"
