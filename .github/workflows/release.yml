@@ -9,4 +9,3 @@ jobs:
     steps:
       - name: Release message
         run: echo "Release event triggered"
-``
