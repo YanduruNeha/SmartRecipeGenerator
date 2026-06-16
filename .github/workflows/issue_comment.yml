@@ -1,0 +1,11 @@
+name: Issue Comment Event
+
+on:
+  issue_comment
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Issue comment message
+        run: echo "Issue comment triggered"
