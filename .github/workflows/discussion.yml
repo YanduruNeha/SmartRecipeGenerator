@@ -1,0 +1,11 @@
+name: Discussion Event
+
+on:
+  discussion
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Discussion event message
+        run: echo "Discussion event triggered"
