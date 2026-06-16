@@ -1,0 +1,11 @@
+name: Fork Event
+
+on:
+  fork
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fork event message
+        run: echo "Fork event triggered"
