@@ -1,0 +1,14 @@
+name: Workflow Run Event
+
+on:
+  workflow_run:
+    workflows: ["Push Workflow"]
+    types:
+      - completed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Workflow run message
+        run: echo "Another workflow completed"
