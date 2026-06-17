@@ -5,4 +5,4 @@ on:
 
 jobs:
   call-workflow:
-    uses: ./.github/workflows/child.yml
+    uses: ./.github/workflows/child_workflow.yml
