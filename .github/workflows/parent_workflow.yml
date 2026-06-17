@@ -1,0 +1,8 @@
+name: Parent Workflow
+
+on:
+  push
+
+jobs:
+  call-workflow:
+    uses: ./.github/workflows/child.yml
