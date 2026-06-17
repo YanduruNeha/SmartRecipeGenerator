@@ -1,0 +1,11 @@
+name: Status Event
+
+on:
+  status
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Status message
+        run: echo "Status event triggered"
