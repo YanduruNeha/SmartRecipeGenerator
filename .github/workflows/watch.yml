@@ -1,0 +1,11 @@
+name: Watch Event
+
+on:
+  watch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Watch message
+        run: echo "Repository starred"
