@@ -33,7 +33,7 @@ jobs:
           cp *.py requirements.txt staging
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: smart-recipe-project
           path: staging
