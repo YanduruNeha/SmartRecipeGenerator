@@ -1,0 +1,22 @@
+name: maxparllel strategy 
+on: push 
+
+jobs: 
+
+  build: 
+
+    runs-on: ubuntu-latest 
+
+    strategy: 
+
+      max-parallel: 2 
+
+      matrix: 
+
+        node: [14, 16, 18, 20] 
+
+    steps: 
+
+      - name: Parallel control 
+
+        run: echo "Max 2 jobs run at same time" 
