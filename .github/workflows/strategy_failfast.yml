@@ -1,0 +1,22 @@
+name: failfast strategy 
+on: push 
+
+jobs: 
+
+  build: 
+
+    runs-on: ubuntu-latest 
+
+    strategy: 
+
+      fail-fast: false 
+
+      matrix: 
+
+        node: [14, 16, 18] 
+
+    steps: 
+
+      - name: Test fail-fast 
+
+        run: echo "Running with fail-fast disabled" 
