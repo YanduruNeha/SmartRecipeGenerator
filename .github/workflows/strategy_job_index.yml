@@ -1,0 +1,11 @@
+name: job_index strategy 
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [14, 16, 18]
+    steps:
+      - name: Show job index
+        run: echo "Job index is ${{ strategy.job-index }}"
