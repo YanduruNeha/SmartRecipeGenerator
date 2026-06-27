@@ -1,0 +1,20 @@
+name: job_total strategy 
+on: push 
+
+jobs: 
+
+  build: 
+
+    runs-on: ubuntu-latest 
+
+    strategy: 
+
+      matrix: 
+
+        node: [14, 16, 18] 
+
+    steps: 
+
+      - name: Show total jobs 
+
+        run: echo "Total jobs are ${{ strategy.job-total }}"
